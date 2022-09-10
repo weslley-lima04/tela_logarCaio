@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/grayapp"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -88,12 +88,14 @@
             android:hint="@string/manuel_silva"
             android:inputType="textPersonName"
             android:lines="1"
-            android:maxLines="1">
+            android:maxLines="1"
+            app:boxStrokeColor="#9c9c9c"
+            app:hintTextColor="#9c9c9c">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:fontFamily="@font/poppinsregular"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -138,14 +140,16 @@
             android:fontFamily="@font/poppinsregular"
             android:hint="@string/_12345"
             android:inputType="textPassword"
-            app:endIconMode="password_toggle"
             android:lines="1"
-            android:maxLines="1">
+            android:maxLines="1"
+            app:boxStrokeColor="#9c9c9c"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="#9c9c9c">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:fontFamily="@font/poppinsregular"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
