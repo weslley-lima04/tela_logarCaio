@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayapp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_wave"
+        />
+
+    <!--
+    <TextView
+        android:id="@+id/txtUsuario1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:text="Usuário"
+        android:textSize="25sp" /> -->
+
+    <TextView
+        android:id="@+id/txtAcessesuaconta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:text="Acesse sua conta"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="35dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:fontFamily="@font/manjaribold"
+            android:padding="5dp"
+            android:text="@string/txtViewName"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:autofillHints="name"
+            android:background="@drawable/border"
+            android:elevation="1dp"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="@string/manuel_silva"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="18dp" />
+
+        <TextView
+            android:id="@+id/txtRM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/manjaribold"
+            android:padding="5dp"
+            android:text="Senha"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtRM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:autofillHints="password"
+            android:background="@drawable/border"
+            android:elevation="1dp"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="@string/_12345"
+            android:inputType="number"
+            android:maxLength="5"
+            android:padding="18dp" />
+
+        <Button
+            android:id="@+id/btnPedir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btnborder"
+            android:fontFamily="@font/poppinssemibold"
+            android:padding="10dp"
+            android:text="Entrar!"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
